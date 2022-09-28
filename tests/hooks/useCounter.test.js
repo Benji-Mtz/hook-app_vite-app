@@ -6,7 +6,7 @@ describe('Pruebas en el useCounter()', () => {
 
         const { result } = renderHook( () => useCounter() );
         const { counter, decrement, increment, reset } =  result.current;
-
+        console.log(result);
         expect( counter ).toBe(10);
         expect( decrement ).toEqual( expect.any( Function ) );
         expect( increment ).toEqual( expect.any( Function ) );
